@@ -1,0 +1,58 @@
+########################################
+# key unbindings
+########################################
+
+bind ^b      #send break to the window
+bind 'b'     #send break to the window
+bind 'B'     #reopen terminal line and send break
+bind ^C      #clear the screen
+bind 'D'     #detach and logout
+bind ^f      #toggle flow: on, off, auto
+bind 'f'     #toggle flow: on, off, auto
+bind 'F'     #fit screen to new size
+bind ^g      #toggle visual bell
+bind ^k      #destroy current window
+bind 'k'     #destroy current window
+bind 'L'     #toggle windows login slot (in utmp)
+bind 'r'     #toggle terminals line wrapping setting
+bind ^r      #toggle terminals line wrapping setting
+bind ^s      #send a ctrl-s (xoff) to the current window
+bind 's'     #send a ctrl-s (xoff) to the current window
+bind 'W'     #toggle width mode: 80 col, 132 col
+bind 'x'     #lock this terminal
+bind ^x      #lock this terminal
+bind 'z'     #suspend screen
+bind ^z      #suspend screen
+bind ^\      #kill all windows and terminate screen
+
+
+
+########################################
+# key bindings
+########################################
+
+#escape ^Jj
+bind 't' title
+bind 'y' paste .
+#bindkey -k k1 select 1          # F1 is screen 1
+#bindkey -k k2 select 2          # F2 is screen 2
+#bindkey -k k3 select 3          # F3 is screen 3
+#bindkey -k k4 select 4          # F4 is screen 4
+#bindkey -k k5 select 5          # F5 is screen 5
+#bindkey -k k6 select 6          # F6 is screen 6
+#bindkey -k k7 select 7          # F7 is screen 7
+#bindkey -k k8 select 8          # F8 is screen 8
+#bindkey -k k9 select 9          # F9 is screen 9
+#bindkey -k k; select 0          # F10 is screen 0
+
+
+
+########################################
+# misc setup
+########################################
+
+defscrollback          10000
+activity 'Activity in local window %n'
+defmonitor                    off
+startup_message               off
+caption always "%{= g}%50-%t%{= g} %{= r}| %{= y}%c:%s %Y-%m-%d %{= r}| %{= g}%W"
